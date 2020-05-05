@@ -1,0 +1,51 @@
+{
+  "name": "rss-feeder",
+  "version": "1.0.0",
+  "description": "displays RSS feeds for given URL",
+  "main": "index.js",
+  "author": "tsl143",
+  "scripts": {
+    "start": "webpack-dev-server",
+    "test": "jest --watchAll",
+    "coverage": "jest --collect-coverage"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@types/react": "^16.9.34",
+    "@types/react-dom": "^16.9.7",
+    "@types/sanitize-html": "^1.23.0",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "sanitize-html": "^1.23.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.9.6",
+    "@babel/plugin-proposal-class-properties": "^7.8.3",
+    "@babel/preset-env": "^7.9.6",
+    "@babel/preset-react": "^7.9.4",
+    "@babel/preset-typescript": "^7.9.0",
+    "copy-webpack-plugin": "^5.1.1",
+    "css-loader": "^3.5.3",
+    "enzyme": "^3.11.0",
+    "enzyme-adapter-react-16": "^1.15.2",
+    "identity-obj-proxy": "^3.0.0",
+    "jest": "^25.1.0",
+    "node-fetch": "^2.6.0",
+    "style-loader": "^1.2.1",
+    "ts-loader": "^7.0.2",
+    "typescript": "^3.8.3",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.10.3"
+  },
+  "jest": {
+    "moduleNameMapper": {
+      "^Component(.*)$": "<rootDir>/src/components/$1",
+      "^src(.*)$": "<rootDir>/src/$1",
+      "\\.(css)$": "identity-obj-proxy"
+    },
+    "setupFiles": [
+      "./tests/jestSetup.js"
+    ]
+  }
+}
