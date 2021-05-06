@@ -16,7 +16,7 @@
     "@types/sanitize-html": "^1.23.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "sanitize-html": "^1.23.0"
+    "sanitize-html": "^2.3.2"
   },
   "devDependencies": {
     "@babel/core": "^7.9.6",
